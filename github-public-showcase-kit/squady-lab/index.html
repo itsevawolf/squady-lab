@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#251839" />
+  <meta name="description" content="Meet Squady: a tiny companion for big ideas. A public interaction and character-mood experiment from SQUADMATE." />
+  <title>Squady Lab · A tiny companion for big ideas</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="https://squadmate.io" rel="noopener noreferrer">SQUADMATE <span>LAB</span></a><a class="back" href="https://github.com/itsevawolf/squady-lab">Explore the lab ↗</a></header>
+  <main>
+    <div class="intro"><p class="eyebrow">EXPERIMENT 001 / CHARACTER & INTERACTION</p><h1>Small character.<br><em>Big personality.</em></h1><p>Meet Squady: a little companion who turns confusing work into a clearer conversation.</p></div>
+    <section class="showcase" aria-labelledby="mood-heading">
+      <div class="scene"><div class="halo"></div><img id="squady" src="assets/squady-happy.webp" alt="Squady looking happy" width="480" height="480" /><div class="shadow"></div></div>
+      <div class="controls"><p class="eyebrow">MEET HIS MOODS</p><h2 id="mood-heading">Happy is home.</h2><p id="mood-description">Squady's everyday mood: curious, approachable, and ready to help.</p>
+        <div class="mood-buttons" role="group" aria-label="Choose Squady's mood">
+          <button type="button" data-mood="happy" aria-pressed="true">Happy</button><button type="button" data-mood="surprised" aria-pressed="false">Surprised</button><button type="button" data-mood="tired" aria-pressed="false">Tired</button><button type="button" data-mood="in-love" aria-pressed="false">In love</button><button type="button" data-mood="frustrated" aria-pressed="false">Frustrated</button>
+        </div>
+        <label class="motion"><input id="motion-toggle" type="checkbox" checked /> Subtle movement</label>
+      </div>
+    </section>
+    <section class="story"><p class="eyebrow">THE IDEA</p><h2>Not another chatbot bubble.</h2><p>Imagine a client arriving with a half-formed idea. Squady listens, helps clarify what's needed, and puts a usable brief into the workspace—without demanding a ten-page form. The person approves the request. The team gets to work.</p><p class="fineprint">This is a static character and motion demo. It does not send your messages, connect to AI, or access any accounts.</p></section>
+  </main>
+  <footer>© 2026 SQUADMATE · Character and brand artwork all rights reserved. <a href="https://squadmate.io">squadmate.io ↗</a></footer>
+</body>
+</html>
