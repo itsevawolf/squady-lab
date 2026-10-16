@@ -54,3 +54,14 @@ body.motion-off .scene .sparkles{animation:none!important}
 .lab-learning{font-size:.92rem;color:var(--soft);max-width:800px;line-height:1.7;margin:1.3rem 0}
 .brief-lab [hidden]{display:none!important}
 @media(max-width:760px){.brief-layout{grid-template-columns:1fr}.brief-lab{padding:1.2rem}.brief-chat,.brief-preview{min-height:0}}
+
+/* Lab experiment directory */
+html{scroll-behavior:smooth}
+.experiment-nav{max-width:1100px;margin:0 auto 2rem;padding:0 2rem;display:flex;flex-wrap:wrap;gap:.75rem}
+.experiment-nav a{font-size:.89rem;text-decoration:none;border:1px solid #ffffff50;border-radius:100px;padding:.68rem 1rem;color:var(--ink);transition:background .15s ease}
+.experiment-nav a:hover,.experiment-nav a:focus-visible{background:#ffffff1b;outline-offset:3px}
+.experiment-heading{max-width:1100px;margin:0 auto 1.5rem;padding:0 2rem;scroll-margin-top:2rem}
+.experiment-heading h2{font-size:clamp(2rem,4vw,3rem);margin:.45rem 0}
+.experiment-heading>p:last-child{color:var(--soft);line-height:1.6;margin:.4rem 0}
+#experiment-002,#squady-helps{scroll-margin-top:2rem}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
