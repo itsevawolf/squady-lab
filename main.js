@@ -22,3 +22,61 @@ document.querySelectorAll('[data-mood]').forEach(button => {
 document.querySelector('#motion-toggle').addEventListener('change', e => {
   document.body.classList.toggle('motion-off', !e.target.checked);
 });
+
+/* Experiment 002: Squady Reacts — a tiny, privacy-friendly interaction */
+const scene = document.querySelector('#squady-scene');
+const reactionMessage = document.querySelector('#reaction-message');
+const motionToggle = document.querySelector('#motion-toggle');
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const canAnimate = () => motionToggle.checked && !prefersReducedMotion.matches;
+const surprises = [
+  { mood: 'surprised', line: 'Oh! You found me.' },
+  { mood: 'in-love', line: 'That made my day. 🧡' },
+  { mood: 'happy', line: 'High five, creative human!' },
+  { mood: 'tired', line: 'Tiny break? Big ideas need space.' }
+];
+let surpriseIndex = 0;
+function selectMood(mood) {
+  const button = document.querySelector('[data-mood="' + mood + '"]');
+  if (button) button.click();
+}
+scene.setAttribute('role', 'button');
+scene.setAttribute('tabindex', '0');
+scene.setAttribute('aria-label', 'Surprise Squady');
+scene.addEventListener('pointermove', (event) => {
+  if (!canAnimate() || event.pointerType === 'touch') return;
+  const rect = scene.getBoundingClientRect();
+  const x = ((event.clientX - rect.left) / rect.width - .5) * 2;
+  const y = ((event.clientY - rect.top) / rect.height - .5) * 2;
+  scene.style.setProperty('--look-x', (x * 11).toFixed(1) + 'px');
+  scene.style.setProperty('--look-y', (y * 7).toFixed(1) + 'px');
+});
+scene.addEventListener('pointerleave', () => {
+  scene.style.setProperty('--look-x', '0px');
+  scene.style.setProperty('--look-y', '0px');
+});
+function surpriseSquady() {
+  const surprise = surprises[surpriseIndex % surprises.length];
+  surpriseIndex++;
+  selectMood(surprise.mood);
+  reactionMessage.textContent = surprise.line;
+  if (canAnimate()) {
+    scene.classList.remove('celebrate');
+    void scene.offsetWidth;
+    scene.classList.add('celebrate');
+  }
+}
+scene.addEventListener('click', surpriseSquady);
+scene.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter' || event.key === ' ') {
+    event.preventDefault();
+    surpriseSquady();
+  }
+});
+motionToggle.addEventListener('change', () => {
+  if (!canAnimate()) {
+    scene.classList.remove('celebrate');
+    scene.style.setProperty('--look-x', '0px');
+    scene.style.setProperty('--look-y', '0px');
+  }
+});
