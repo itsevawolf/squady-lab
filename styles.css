@@ -65,3 +65,24 @@ html{scroll-behavior:smooth}
 .experiment-heading>p:last-child{color:var(--soft);line-height:1.6;margin:.4rem 0}
 #experiment-002,#squady-helps{scroll-margin-top:2rem}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Unified Squady Lab layout system */
+:root{--lab-width:1100px;--lab-gutter:clamp(1.25rem,4vw,2rem);--lab-section-gap:clamp(3.5rem,7vw,6rem)}
+.site-header{max-width:calc(var(--lab-width) + 2 * var(--lab-gutter));margin-inline:auto;padding-inline:var(--lab-gutter)}
+main{width:100%}
+.intro,.experiment-nav,.experiment-heading,.showcase,.brief-lab,.story{box-sizing:border-box;width:calc(100% - 2 * var(--lab-gutter));max-width:var(--lab-width);margin-left:auto;margin-right:auto}
+.intro{padding:clamp(2.5rem,6vw,4.5rem) 0 2.25rem}
+.experiment-nav{padding:0;margin-bottom:var(--lab-section-gap)}
+.experiment-heading{padding:0;margin-bottom:1.5rem}
+.showcase{padding:clamp(1.25rem,3vw,2rem);margin-bottom:var(--lab-section-gap)}
+.brief-lab{padding:0;margin-bottom:var(--lab-section-gap)}
+.story{padding:0 0 var(--lab-section-gap);max-width:var(--lab-width)}
+.intro h1{margin:1rem 0 1.4rem}
+.experiment-heading h2,.brief-header h2,.story h2{font-size:clamp(2.4rem,5vw,4rem);line-height:1.13;letter-spacing:-.02em;margin:.65rem 0 1rem}
+.eyebrow{margin:0 0 .65rem;line-height:1.45}
+.intro>p:last-child,.experiment-heading>p:last-child,.brief-header>p:not(.eyebrow),.story>p:not(.eyebrow){max-width:780px;font-size:clamp(1rem,1.5vw,1.15rem);line-height:1.7;margin:0}
+.brief-header{max-width:none;margin-bottom:2rem}
+.brief-header .demo-note{margin-top:1rem!important;font-size:.85rem!important}
+.controls h2{margin:.65rem 0 1rem;line-height:1.15}
+.brief-chat,.brief-preview{min-width:0;padding:clamp(1.25rem,3vw,2rem)}
+@media(max-width:820px){.intro,.experiment-nav,.experiment-heading,.showcase,.brief-lab,.story{width:calc(100% - 2 * var(--lab-gutter))}.showcase{margin-left:auto;margin-right:auto}.controls{padding:1rem 0}.site-header{padding-inline:var(--lab-gutter)}}
