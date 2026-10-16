@@ -30,3 +30,5 @@ Open `index.html` in a browser. No API keys, installs, analytics accounts, or lo
 ### Art & usage
 
 © 2026 SQUADMATE / Eva Wolf. Character artwork, branding, and design remain proprietary. Publishing this demo does not license reuse of the Squady character or identity.
+
+creative-coding, interaction-design, javascript, ui-ux, microinteractions, mascot, frontend, human-centered-design
