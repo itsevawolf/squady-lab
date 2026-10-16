@@ -1,42 +1,29 @@
 # Squady Lab 🍿
 
-### A tiny companion for big ideas.
+**A tiny companion for big ideas.**
 
-Squady is an experimental 3D-style character for **SQUADMATE**, a workspace that helps agencies, clients and contractors collaborate around clear requests and visible delivery.
+[**Try Squady live → lab.squadmate.io**](https://lab.squadmate.io)
 
-![Squady feeling happy](assets/squady-happy.webp)
+![Squady looking happy](assets/squady-happy.webp)
 
-This public lab shares **interaction and personality explorations**, not SQUADMATE's private application source, credentials, APIs or customer data.
+Squady is the playful interface companion for **SQUADMATE** — software that helps agencies, clients, and creative teams turn ideas into clear requests and get work moving.
 
-## Explore the moods
+### What's here
 
-[Open the interactive demo](https://itsevawolf.github.io/squady-lab/) *(available after GitHub Pages is enabled)*
+A tiny, public character playground: five moods, subtle movement, and a responsive static demo. Switch expressions, explore the personality, and see how a useful product can feel a little more human.
 
-Happy is Squady's default. Surprised, tired, in-love and frustrated expressions offer subtle contextual reactions. The character is intended to be encouraging, never judgmental about someone's workload.
+- **Live playground:** [lab.squadmate.io](https://lab.squadmate.io)
+- **The product:** [squadmate.io](https://squadmate.io)
+- **The founder:** [Eva Wolf](https://evawolf.online)
 
-## Product concept
+### Why it exists
 
-**Start with a thought, end with a useful brief.**
+I’m exploring what happens when software stops feeling like a ticketing system and starts feeling like a conversation. Squady is an experiment in *useful personality*: curious, contextual, reassuring, and always leaving decisions with the user.
 
-A client says what they're trying to achieve. Squady asks only what's missing, proposes the appropriate service, and presents an editable request card. The client stays in control of submission and any credit charge.
+### Run it locally
 
-Agency and contractor experiences use the same principle but different permissions. A white-label agency controls its brand and client relationship; Squady remains a recognizable companion.
+Open `index.html` in a browser. No API keys, installs, analytics accounts, or login required. This is a static character experiment, **not** the SQUADMATE production app or an AI-connected assistant.
 
-## Demo scope
+### Art & usage
 
-- Five character mood expressions
-- Gentle, CSS-only motion with a reduced-motion option
-- Responsive prototype that runs locally as a static page
-- No AI provider connection, account access, payment processing or real requests
-
-## Run locally
-
-Open `index.html` in a browser. No installation or API key needed.
-
-## Follow the build
-
-[Meet SQUADMATE](https://squadmate.io) · [Eva Wolf](https://evawolf.online) · [ASK WOLF](https://askwolf.agency)
-
-### License and intellectual property
-
-© 2026 SQUADMATE / Eva Wolf. All rights reserved to the original Squady character artwork, logos, designs, names and branding. Demo source is provided for viewing and inspiration, **not an open-source grant or permission to reuse the character or visual identity**. Please contact the owner for licensing.
+© 2026 SQUADMATE / Eva Wolf. Character artwork, branding, and design remain proprietary. Publishing this demo does not license reuse of the Squady character or identity.
