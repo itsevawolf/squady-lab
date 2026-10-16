@@ -30,3 +30,27 @@ body{font-family:'DM Sans',sans-serif}
 body.motion-off .scene img{animation:none!important;transform:none!important;translate:0 0}
 body.motion-off .scene .sparkles{animation:none!important}
 @media(prefers-reduced-motion:reduce){.scene img,.scene.celebrate img,.scene.celebrate .sparkles{animation:none!important;transition:none!important;transform:none!important;translate:0 0!important}}
+
+/* Experiment 003 · Squady Helps */
+.brief-lab{max-width:1100px;margin:0 auto 5rem;padding:2rem}
+.brief-header{max-width:780px;margin-bottom:2rem}
+.brief-header h2{font-size:clamp(2.4rem,5vw,4.2rem);margin:.8rem 0}
+.brief-header>p:not(.eyebrow){color:var(--soft);line-height:1.7}
+.brief-header .demo-note{font-size:.84rem;color:#f1ae88}
+.brief-layout{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;align-items:start}
+.brief-chat,.brief-preview{background:#312247;border:1px solid #ffffff1b;border-radius:26px;padding:clamp(1.25rem,3vw,2rem);min-height:420px}
+.squady-message{display:flex;align-items:center;gap:.8rem;margin-bottom:1.6rem}
+.squady-message img{width:64px;height:64px;object-fit:contain;flex-shrink:0}
+.squady-message p{background:#423154;border-radius:18px;padding:1rem;line-height:1.5;margin:0}
+.brief-lab label{display:block;font-size:.88rem;margin:1rem 0 .45rem;color:var(--soft)}
+.brief-lab textarea,.brief-lab input:not([type=checkbox]),.brief-lab select{width:100%;border:1px solid #83718d;background:#20172f;color:#fff;padding:.85rem;border-radius:12px;font:inherit;resize:vertical}
+.brief-lab textarea:focus-visible,.brief-lab input:focus-visible,.brief-lab select:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.brief-lab button{cursor:pointer;border-radius:100px;padding:.8rem 1.2rem;font-weight:600}
+.primary-action{border:0;background:var(--orange);color:#251839;margin-top:1rem}
+.secondary-action,.reset-brief{background:none;color:var(--ink);border:1px solid #ffffff66;margin-top:1rem}
+.brief-preview h3{font-family:'Fredoka',sans-serif;font-size:1.5rem;font-weight:400;margin:1rem 0}
+.brief-preview p{color:var(--soft);line-height:1.6}
+.preview-status{margin-top:1.2rem;padding:.7rem;border-radius:10px;background:#ffffff12;color:#e7d9ed;font-size:.85rem}
+.lab-learning{font-size:.92rem;color:var(--soft);max-width:800px;line-height:1.7;margin:1.3rem 0}
+.brief-lab [hidden]{display:none!important}
+@media(max-width:760px){.brief-layout{grid-template-columns:1fr}.brief-lab{padding:1.2rem}.brief-chat,.brief-preview{min-height:0}}
