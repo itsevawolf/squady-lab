@@ -10,7 +10,10 @@ Squady is the playful interface companion for **SQUADMATE** — software that he
 
 ### What's here
 
-A tiny, public character playground: five moods, subtle movement, and a responsive static demo. Switch expressions, explore the personality, and see how a useful product can feel a little more human.
+A public, responsive character and product-UX playground. Try two experiments:
+
+- **Experiment 002 — Squady Reacts:** explore five moods, subtle cursor movement, click surprises, and reduced-motion-friendly interactions.
+- **Experiment 003 — Squady Helps:** describe a creative idea, answer one context-specific follow-up, and edit or copy a structured request draft. This is a deterministic browser-only simulation, not a connected AI assistant.
 
 - **Live playground:** [lab.squadmate.io](https://lab.squadmate.io)
 - **The product:** [squadmate.io](https://squadmate.io)
@@ -22,7 +25,7 @@ I’m exploring what happens when software stops feeling like a ticketing system
 
 ### Run it locally
 
-Open `index.html` in a browser. No API keys, installs, analytics accounts, or login required. This is a static character experiment, **not** the SQUADMATE production app or an AI-connected assistant.
+Open `index.html` in a browser. No API keys, installs, analytics accounts, or login required. Experiments run locally in the page; the brief simulation does **not** submit requests, persist data, access accounts, or charge credits. This is **not** the SQUADMATE production app or an AI-connected assistant.
 
 ### Art & usage
 
